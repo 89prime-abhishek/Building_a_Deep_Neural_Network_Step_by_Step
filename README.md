@@ -1,30 +1,4 @@
-
-   "cell_type": "markdown",
-   "metadata": {},
-   "source": [
-    "# Building your Deep Neural Network: Step by Step\n",
-    "\n",
-    "Welcome to your week 4 assignment (part 1 of 2)! You have previously trained a 2-layer Neural Network (with a single hidden layer). This week, you will build a deep neural network, with as many layers as you want!\n",
-    "\n",
-    "- In this notebook, you will implement all the functions required to build a deep neural network.\n",
-    "- In the next assignment, you will use these functions to build a deep neural network for image classification.\n",
-    "\n",
-    "**After this assignment you will be able to:**\n",
-    "- Use non-linear units like ReLU to improve your model\n",
-    "- Build a deeper neural network (with more than 1 hidden layer)\n",
-    "- Implement an easy-to-use neural network class\n",
-    "\n",
-    "**Notation**:\n",
-    "- Superscript $[l]$ denotes a quantity associated with the $l^{th}$ layer. \n",
-    "    - Example: $a^{[L]}$ is the $L^{th}$ layer activation. $W^{[L]}$ and $b^{[L]}$ are the $L^{th}$ layer parameters.\n",
-    "- Superscript $(i)$ denotes a quantity associated with the $i^{th}$ example. \n",
-    "    - Example: $x^{(i)}$ is the $i^{th}$ training example.\n",
-    "- Lowerscript $i$ denotes the $i^{th}$ entry of a vector.\n",
-    "    - Example: $a^{[l]}_i$ denotes the $i^{th}$ entry of the $l^{th}$ layer's activations).\n",
-    "\n",
-    "Let's get started!"
-   ]
-  },# Building your Deep Neural Network: Step by Step
+# Building your Deep Neural Network: Step by Step
 
 Welcome to your week 4 assignment (part 1 of 2)! You have previously trained a 2-layer Neural Network (with a single hidden layer). This week, you will build a deep neural network, with as many layers as you want!
 
@@ -74,7 +48,7 @@ To build your neural network, you will be implementing several "helper functions
     - Stack [LINEAR->RELU] backward L-1 times and add [LINEAR->SIGMOID] backward in a new L_model_backward function
 - Finally update the parameters.
 
-<img src="images/final outline.png" style="width:800px;height:500px;">
+![](images/final+outline.png)
 <caption><center> **Figure 1**</center></caption><br>
 
 
